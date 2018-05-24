@@ -1,0 +1,42 @@
+{
+  "name": "boids.js",
+  "version": "0.0.2",
+  "description": "boids threejs fly like a lot of birds",
+  "main": "./build/boids.js",
+  "scripts": {
+    "build": "rollup -c",
+    "build:dev": "rollup -c -w",
+    "extract": "npmsrcify extract",
+    "http": "hs -o",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "config": {
+    "npmsrcify": {
+      "modules": [
+        "dat.gui",
+        "stats.js",
+        "three"
+      ],
+      "output": "./demos/lib"
+    }
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-env": "^1.7.0",
+    "dat.gui": "^0.7.2",
+    "eslint": "^4.19.1",
+    "eslint-config-egg": "^7.0.0",
+    "http-server": "^0.11.1",
+    "npmsrcify": "0.0.2",
+    "rollup": "^0.59.2",
+    "rollup-plugin-babel": "^3.0.4",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "rollup-watch": "^4.3.1",
+    "standard-version": "^4.4.0",
+    "stats.js": "^0.17.0",
+    "three": "^0.92.0"
+  }
+}
