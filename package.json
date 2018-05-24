@@ -7,6 +7,9 @@
   "scripts": {
     "build": "rollup -c",
     "build:dev": "rollup -c -w",
+    "prever": "npm run build && npm run extract && git add -A && git commit -m 'release: release a new version'",
+    "ver": "standard-version -m 'chore(release): v%s'",
+    "postver": "git push --follow-tags origin master && npm publish",
     "extract": "npmsrcify extract",
     "http": "hs -o",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -31,7 +34,7 @@
     "eslint": "^4.19.1",
     "eslint-config-egg": "^7.0.0",
     "http-server": "^0.11.1",
-    "npmsrcify": "0.0.2",
+    "npmsrcify": "0.1.0",
     "rollup": "^0.59.2",
     "rollup-plugin-babel": "^3.0.4",
     "rollup-plugin-node-resolve": "^3.3.0",
