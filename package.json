@@ -1,8 +1,9 @@
 {
   "name": "boids.js",
   "version": "0.0.2",
-  "description": "boids threejs fly like a lot of birds",
+  "description": "boids algorithm, fly like a flock of birds",
   "main": "./build/boids.js",
+  "module": "./build/boids.module.js",
   "scripts": {
     "build": "rollup -c",
     "build:dev": "rollup -c -w",
