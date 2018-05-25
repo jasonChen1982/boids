@@ -75,6 +75,7 @@
         renderer.setSize(SCREEN_WIDTH, SCREEN_HEIGHT);
 
         window.addEventListener('resize', onWindowResize, false);
+        window.addEventListener('resize', onDocumentMouseMove, false);
       }
 
       function onWindowResize() {
