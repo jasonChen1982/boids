@@ -33,7 +33,6 @@ function Bird() {
     scope.faces.push(new THREE.Face3(a, b, c));
 
   }
-
 }
 
 Bird.prototype = Object.create(THREE.Geometry.prototype);
